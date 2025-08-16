@@ -16,6 +16,7 @@ int main() {
         document.getElementsByTagName("body").item(0);
     auto button = document.createElement("BUTTON");
     button.textContent("Click me");
+    jsbind::Console().log(button.textContent());
     button.addEventListener(
         "click",
         Function::Fn<void(PointerEvent)>([=](auto /*p*/) {
