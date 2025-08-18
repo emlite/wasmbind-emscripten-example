@@ -2,13 +2,12 @@
 
 This is an example C++ repo which shows how you can use wasmbind to target web API via emscripten, wasmbind and emlite.
 
-wasmbind is fetched in the CMake script using FetchContent.
-
 Do note that using npm is not strictly necessary, however it simplifies bundling emlite and managing its version.
 
 ## Usage
-After git cloning the repo:
 ```bash
+git clone https://github.com/emlite/wasmbind-example --recurse-submodules
+cd wasmbind-example
 npm i
 npm run cmake:config
 npm run cmake:build
