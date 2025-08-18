@@ -6,8 +6,8 @@ Do note that using npm is not strictly necessary, however it simplifies bundling
 
 ## Usage
 ```bash
-git clone https://github.com/emlite/wasmbind-emscripten-example --recurse-submodules
-cd wasmbind-example
+git clone https://github.com/emlite/wasmbind-emscripten-example
+cd wasmbind-emscripten-example
 npm i
 npm run cmake:config
 npm run cmake:build
