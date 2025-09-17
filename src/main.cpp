@@ -16,10 +16,9 @@ int main() {
         document.getElementsByTagName("body").item(0);
     auto button = document.createElement("BUTTON");
     button.textContent("Click me");
-    jsbind::Console().log(button.textContent());
     button.addEventListener(
         "click",
-        Function::Fn<void(PointerEvent)>([=](auto /*p*/) {
+        Function::Fn<jsbind::Undefined(Event)>([=](auto /*p*/) {
             auto os = oscillator.clone();
             os.connect(context.destination().as<AudioParam>(
             ));
